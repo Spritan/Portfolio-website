@@ -1,64 +1,73 @@
-// Other important pens.
-// Map: https://codepen.io/themustafaomar/pen/ZEGJeZq
-// Dashboard: https://codepen.io/themustafaomar/pen/jLMPKm
-
-let dropdowns = document.querySelectorAll('.navbar .dropdown-toggler')
-let dropdownIsOpen = false
-
-// Handle dropdown menues
-if (dropdowns.length) {
-  // Usually I don't recommend doing this (adding many event listeners to elements have the same handler)
-  // Instead use event delegation: https://javascript.info/event-delegation
-  // Why: https://gomakethings.com/why-event-delegation-is-a-better-way-to-listen-for-events-in-vanilla-js
-  // But since we only have two dropdowns, no problem with that. 
-  dropdowns.forEach((dropdown) => {
-    dropdown.addEventListener('click', (event) => {
-      let target = document.querySelector('#' + event.target.dataset.dropdown)
-
-      if (target) {
-        if (target.classList.contains('show')) {
-          target.classList.remove('show')
-          dropdownIsOpen = false
-        } else {
-          target.classList.add('show')
-          dropdownIsOpen = true
+$(document).ready(function(){
+    $(window).scroll(function(){
+        // sticky navbar on scroll script
+        if(this.scrollY > 20){
+            $('.navbar').addClass("sticky");
+        }else{
+            $('.navbar').removeClass("sticky");
         }
-      }
-    })
-  })
-}
+        
+        // scroll-up button show/hide script
+        if(this.scrollY > 500){
+            $('.scroll-up-btn').addClass("show");
+        }else{
+            $('.scroll-up-btn').removeClass("show");
+        }
+    });
 
-// Handle closing dropdowns if a user clicked the body
-window.addEventListener('mouseup', (event) => {
-  if (dropdownIsOpen) {
-    dropdowns.forEach((dropdownButton) => {
-      let dropdown = document.querySelector('#' + dropdownButton.dataset.dropdown)
-      let targetIsDropdown = dropdown == event.target
+    // slide-up script
+    $('.scroll-up-btn').click(function(){
+        $('html').animate({scrollTop: 0});
+        // removing smooth scroll on slide-up button click
+        $('html').css("scrollBehavior", "auto");
+    });
 
-      if (dropdownButton == event.target) {
-        return
-      }
+    $('.navbar .menu li a').click(function(){
+        // applying again smooth scroll on menu items click
+        $('html').css("scrollBehavior", "smooth");
+    });
 
-      if ((!targetIsDropdown) && (!dropdown.contains(event.target))) {
-        dropdown.classList.remove('show')
-      }
-    })
-  }
-})
+    // toggle menu/navbar script
+    $('.menu-btn').click(function(){
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    });
 
-// Open links in mobiles
-function handleSmallScreens() {
-  document.querySelector('.navbar-toggler')
-    .addEventListener('click', () => {
-    let navbarMenu = document.querySelector('.navbar-menu')
+    // typing text animation script
+    var typed = new Typed(".typing", {
+        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
 
-    if (navbarMenu.style.display === 'flex') {
-      navbarMenu.style.display = 'none'
-      return
-    }
+    var typed = new Typed(".typing-2", {
+        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
 
-    navbarMenu.style.display = 'flex'
-  })
-}
-
-handleSmallScreens()
+    // owl carousel script
+    $('.carousel').owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplay: true,
+        autoplayTimeOut: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0:{
+                items: 1,
+                nav: false
+            },
+            600:{
+                items: 2,
+                nav: false
+            },
+            1000:{
+                items: 3,
+                nav: false
+            }
+        }
+    });
+});
