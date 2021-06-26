@@ -2,11 +2,11 @@
 
 $font-family: 'Roboto', sans-serif;
 $font-size-base: 0.925rem;
-$base-color: #66f;
-$text-dark: #3c4250;
-$border-color: #eceef3;
+$base-color: white ;
+$text-dark: black ;
+$border-color: #eceef3 ;
 
-$navbar-body-color: #fff;
+$navbar-body-color: #fff ;
 // $navbar-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.035);
 $navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 $navbar-padding-y: 1rem;
