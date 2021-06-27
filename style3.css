@@ -239,7 +239,6 @@ section .title::after{
     background-attachment: fixed;
     font-family:courier,arial,helvetica;
     text-align: center;
-    
 }
 .home .max-width{
   width: 100%;
