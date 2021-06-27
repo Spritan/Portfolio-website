@@ -278,6 +278,10 @@ section .title::after{
     color: #3CA67F;
     background: none;
 }
+.home_img{
+    max-width: 35%;
+    padding: 10px;
+}
 
 /* home sec styling 
 .home{
@@ -695,6 +699,12 @@ footer span a:hover{
     }
 }
 @media (max-width: 947px){
+    .home_img {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }
     .menu-btn{
         display: block;
         z-index: 999;
@@ -775,6 +785,12 @@ footer span a:hover{
     .services .serv-content .card{
         width: 100%;
     }
+    .home_img {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }
 }
 
 @media (max-width: 500px) {
@@ -806,4 +822,11 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+    .home_img {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }
 }
+
