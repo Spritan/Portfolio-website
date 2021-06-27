@@ -334,16 +334,11 @@ section .title::after{
     color: var(--clr-light);
     text-align: center;    
 }
-.my-work2 {
-    background-color: #353535;
-    color: var(--clr-light);
-    text-align: center;    
+.section__subtitle--work {
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
 }
-.my-work3{
-    background-color: #353535;
-    color: var(--clr-light);
-    text-align: center;  
- 
 /* about section styling */
 .about .title::after{
     content: "who i am";
