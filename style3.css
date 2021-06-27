@@ -230,6 +230,7 @@ section .title::after{
 
 /* home sec styling */
 .home{
+    padding-left: 8em;
     display: flex;
     background: url("imgs/kk.jpg") no-repeat center;
     height: 100vh;
@@ -246,7 +247,7 @@ section .title::after{
   align-items: center;
 }
 .home .home-content .text-1{
-    font-size: 27px;
+    font-size: 49px;
 }
 .home .home-content .text-2{
     font-size: 75px;
