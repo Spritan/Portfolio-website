@@ -36,6 +36,10 @@ section{
     padding: 0 80px;
     margin: auto;
 }
+.about{
+    background-color:#617F81;
+    color: white;
+}
 .about, .services, .skills, .teams, .contact, footer{
     font-family: 'Ubuntu', sans-serif;
 }
@@ -348,9 +352,7 @@ section .title::after{
     ;
 }
 
-.about .title::after{
-    content: "who i am";
-}
+
 .about .about-content .left{
     width: 45%;
 }
