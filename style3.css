@@ -326,6 +326,7 @@ sec .title::after{
 }
 */
 /* My Work */
+
 .my-work {
     background-color: #212121;
     color: #3CA67F;
@@ -334,6 +335,7 @@ sec .title::after{
 
 .my-work h2{
     color: white;
+    
 }
 
 .about .title::after{
