@@ -1,78 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
-    <!--<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
-  <!--  <nav>
-        <img class="navitem" src="./imgs/logo.png" alt="">
-        <div id="links">
-            <a class="navitem" href="#">Home</a>
-            <a class="navitem" href="#">About me</a>
-            <a class="navitem" href="#">My works</a>
-            <a class="navitem" href="#">Contact</a>
-        </div>
-    </nav>-->
-    <header id="nav-wrapper"></header>
-    <nav class="navbar">
-        <div class="container">
-    
-            <div class="navbar-header">
-                <button class="navbar-toggler" data-toggle="open-navbar1">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <a href="#">
-                    <h4>Awesome<span>logo</span></h4>
-                </a>
-            </div>
-    
-            <div class="navbar-menu" id="open-navbar1">
-                <ul class="navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li class="navbar-dropdown">
-                        <a href="#" class="dropdown-toggler" data-dropdown="my-dropdown-id">
-                            Categories <i class="fa fa-angle-down"></i>
-                        </a>
-                        <ul class="dropdown" id="my-dropdown-id">
-                            <li><a href="#">Actions</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="separator"></li>
-                            <li><a href="#">Seprated link</a></li>
-                            <li class="separator"></li>
-                            <li><a href="#">One more seprated link.</a></li>
-                        </ul>
-                    </li>
-                    <li class="navbar-dropdown">
-                        <a href="#" class="dropdown-toggler" data-dropdown="blog">
-                            Blog <i class="fa fa-angle-down"></i>
-                        </a>
-                        <ul class="dropdown" id="blog">
-                            <li><a href="#">Some category</a></li>
-                            <li><a href="#">Some another category</a></li>
-                            <li class="separator"></li>
-                            <li><a href="#">Seprated link</a></li>
-                            <li class="separator"></li>
-                            <li><a href="#">One more seprated link.</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Signin</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-    
 
+    <div id="loader">
+        <div id="wrapperload">
+            <div class="elem">
+                <img src="./imgs/name.png" alt="">
+            </div>
+            <div class="elem">
+                <h3>UI/UX Designer</h3>
+            </div>
+            <div class="elem">
+                <h3>loves to help brands.</h3>
+            </div>
+            <div class="elem">
+                <img src="./imgs/name.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
+    <script src="script2.js"></script>
+
+    <script>
+        var menu = document.querySelector('#menu');
+        var bg = document.querySelector('#bg');
+
+        menu.addEventListener('click', function () {
+            bg.style.transform = 'scale(.8)';
+            bg.style.borderRadius = '10px';
+            bg.style.boxShadow = '0 150px 45px -100px rgba(0,0,0,0.2)';
+        })
+    </script>
 </body>
-<script src="script2.js"></script>
+
 </html>
