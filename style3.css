@@ -329,7 +329,15 @@ sec .title::after{
 }
 */
 /* My Work */
+.my-work {
+    background-color: #212121;
+    color: #3CA67F;
+    text-align: center;    
+}
 
+.my-work h2{
+    color: white;
+}
 
 /* about sec styling */
 .about .title::after{
