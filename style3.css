@@ -27,7 +27,7 @@ html{
 }
 
 /* all similar content styling codes */
-sec{
+section{
     padding: 100px 0;
 }
 .max-width{
@@ -108,7 +108,7 @@ sec{
 }
 
 
-sec .title{
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -117,7 +117,7 @@ sec .title{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-sec .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -127,7 +127,7 @@ sec .title::before{
     background: #111;
     transform: translateX(-50%);
 }
-sec .title::after{
+section .title::after{
     position: absolute;
     bottom: -8px;
     left: 50%;
@@ -335,7 +335,7 @@ sec .title::after{
 
 .my-work h2{
     color: white;
-    
+    ;
 }
 
 .about .title::after{
@@ -381,7 +381,7 @@ sec .title::after{
     background: none;
 }
 
-/* services sec styling */
+/* services section styling */
 .services, .teams{
     color:#fff;
     background: #111;
