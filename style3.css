@@ -37,7 +37,7 @@ section{
     margin: auto;
 }
 .about{
-    background-color:#617F81;
+    background-color:#212121;
     color: white;
 }
 .about, .services, .skills, .teams, .contact, footer{
@@ -124,26 +124,8 @@ section .title{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-section .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #111;
-    transform: translateX(-50%);
-}
-section .title::after{
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    font-size: 20px;
-    color: #3CA67F;
-    padding: 0 5px;
-    background: #fff;
-    transform: translateX(-50%);
-}
+
+
 
 /* navbar styling */
 .navbar{
