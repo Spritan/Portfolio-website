@@ -241,9 +241,6 @@ sec .title::after{
   display: flex;
   align-items: center;
 }
-.home .max-width .row{
-  
-}
 .home .home-content .text-1{
     font-size: 27px;
 }
@@ -339,7 +336,6 @@ sec .title::after{
     color: white;
 }
 
-/* about sec styling */
 .about .title::after{
     content: "who i am";
 }
