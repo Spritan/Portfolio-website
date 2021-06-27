@@ -45,7 +45,7 @@ section{
 }
 .about .about-content,
 .services .serv-content,
-.skills .skills-content,
+/*.skills .skills-content,*/
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -406,7 +406,7 @@ section .title{
     margin: 10px 0 7px 0;
 }
 
-/* skills sec styling */
+/* skills sec styling 
 
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -477,7 +477,7 @@ section .title{
 .skills-content .right .mysql::before{
     width: 70%;
 }
-
+*/
 /* teams sec styling */
 .teams .title::after{
     content: "who with me";
@@ -829,3 +829,33 @@ footer span a:hover{
     }
 }
 
+/* Set height of body and the document to 100% to enable "full page tabs" */
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Web-Dev {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#Abt {background-color: orange;}
