@@ -321,20 +321,6 @@ section .title{
     background: none;
 }
 */
-/* My Work */
-
-.my-work {
-    background-color: #212121;
-    color: #3CA67F;
-    text-align: center;    
-}
-
-.my-work h2{
-    color: white;
-    ;
-}
-
-
 .about .about-content .left{
     width: 45%;
 }
@@ -353,28 +339,27 @@ section .title{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: #3CA67F;
+    color: crimson;
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: #3CA67F;
+    background: crimson;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #3CA67F;
+    border: 2px solid crimson;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: #3CA67F;
+    color: crimson;
     background: none;
 }
-
 /* services section styling */
 .services, .teams{
     color:#fff;
@@ -423,9 +408,6 @@ section .title{
 
 /* skills sec styling */
 
-.skills .title::after{
-    content: "what i know";
-}
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
