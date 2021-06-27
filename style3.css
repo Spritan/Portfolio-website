@@ -37,7 +37,7 @@ section{
     margin: auto;
 }
 .about, .services, .skills, .teams, .contact, footer{
-    font-family: 'Poppins', sans-serif;
+    font-family:courier,arial,helvetica;
 }
 .about .about-content,
 .services .serv-content,
@@ -635,7 +635,7 @@ section .title::after{
     outline: none;
     padding: 0 15px;
     font-size: 17px;
-    font-family: 'Poppins', sans-serif;
+    font-family:courier,arial,helvetica;
     transition: all 0.3s ease;
 }
 .contact .right form .field input:focus,
