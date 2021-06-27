@@ -238,6 +238,7 @@ section .title::after{
     background-size: cover;
     background-attachment: fixed;
     font-family:courier,arial,helvetica;
+    text-align: center;
     
 }
 .home .max-width{
