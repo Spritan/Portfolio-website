@@ -51,7 +51,7 @@ section{
     background-color: #212121;
     color: White
 }
-.about, .services, .skills, .myTeam, .contact, footer{
+.about, .services, .skills, .myTeams, .contact, footer{
     font-family: 'Ubuntu', sans-serif;
 }
 .about .about-content,
@@ -256,7 +256,7 @@ section .title{
     background: none;
 }
 /* services section styling */
-.services, .myTeams{
+.services{
     color:#fff;
     background: #111;
 }
@@ -549,7 +549,7 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column,
+    .myTeams, .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
@@ -637,7 +637,7 @@ footer span a:hover{
 #Web-Dev {background-color:#303030;}
 #Ui-Design {background-color: #303030;}
 #Development {background-color: #303030;}
-#Abt {background-color: #303030;}
+#VCS {background-color: #303030;}
 #Graphic-Design {background-color: #303030;}
 
 .card {
@@ -701,8 +701,8 @@ footer span a:hover{
 }
 
 
-.myTeam {
-    max-width: 1000px;
+.myTeams {
+    max-width: 1140px;
     margin: auto;
     color: #212121;
   }
@@ -760,6 +760,7 @@ footer span a:hover{
     max-width: 300px;
     margin: auto;
     text-align: center;
+
   }
   
   .title {
