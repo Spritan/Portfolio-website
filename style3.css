@@ -44,8 +44,12 @@ section{
     margin: auto;
 }
 .about{
-    background-color:#212121;
-    color: white;
+    background-color:#white;
+    color: #212121;
+}
+.skills{
+    background-color: #212121;
+    color: White
 }
 .about, .services, .skills, .teams, .contact, footer{
     font-family: 'Ubuntu', sans-serif;
