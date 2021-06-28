@@ -51,7 +51,7 @@ section{
     background-color: #212121;
     color: White
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .myTeam, .contact, footer{
     font-family: 'Ubuntu', sans-serif;
 }
 .about .about-content,
@@ -256,19 +256,11 @@ section .title{
     background: none;
 }
 /* services section styling */
-.services, .teams{
+.services, .myTeams{
     color:#fff;
     background: #111;
 }
-.services .title::before,
-.teams .title::before{
-    background: #fff;
-}
-.services .title::after,
-.teams .title::after{
-    background: #111;
-    content: "what i provide";
-}
+
 .services .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
@@ -303,46 +295,7 @@ section .title{
 
 
 /* teams sec styling */
-.teams .title::after{
-    content: "who with me";
-}
-.teams .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover{
-    background: #3CA67F;
-}
-.teams .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-.teams .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.teams .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #3CA67F;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover img{
-    border-color: #fff;
-}
+
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -483,6 +436,7 @@ footer span a:hover{
 }
 
 .footer a { 
+    
     color: #3CA67F;
     text-decoration: none;
 }
@@ -749,6 +703,7 @@ footer span a:hover{
 .myTeam {
     max-width: 1000px;
     margin: auto;
+    color: #212121;
   }
   
   h1 {
@@ -807,7 +762,7 @@ footer span a:hover{
   }
   
   .title {
-    color: grey;
+    color: white;
     font-size: 18px;
   }
   
