@@ -161,7 +161,6 @@ section .title{
 
 /* home sec styling */
 .home{
-    padding-left: 8em;
     display: flex;
     background: url("imgs/kk.jpg") no-repeat center;
     height: 100vh;
