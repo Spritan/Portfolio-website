@@ -43,8 +43,10 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-
-
+.about{
+    background-color:#white;
+    color: #212121;
+}
 .skills{
     background-color: #212121;
     color: White
@@ -212,17 +214,14 @@ section .title{
     max-width: 35%;
     padding: 10px;
 }
-.about{
-    background-color:#white;
-    color: #212121;
-}
+
 
 .about .about-content .lf{
     width: 40%;
 }
 .about .about-content .lf img{
-    max-height: 300px;
-    max-width: 300px;
+    height: 400px;
+    width: 400px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -476,14 +475,8 @@ footer span a:hover{
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
-        max-height: 350px;
-        max-width: 350px;
-    }
-}
-@media (max-width: 1024px) {
-    .about .about-content .left img{
-        max-height: 300px;
-        max-width: 300px;
+        height: 350px;
+        width: 350px;
     }
 }
 
@@ -493,10 +486,9 @@ footer span a:hover{
     }
 }
 @media (max-width: 947px){
-    
     .home_img {
         grid-area: img;
-        
+        min-width: 250px;
         position: relative;
         z-index: 2;
     }
@@ -563,23 +555,8 @@ footer span a:hover{
         margin-bottom: 35px;
     }
 }
-@media screen and (max-width: 900px) {
-    .column {
-      width: 50%;
-    }
-  }
-@media (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
 
-  
 @media (max-width: 690px) {
-    .home{
-        padding-left: 0;
-    }
     .max-width{
         padding: 0 23px;
     }
@@ -595,52 +572,16 @@ footer span a:hover{
     .services .serv-content .card{
         width: 100%;
     }
-    .about .about-content .lf img{
-    max-height: 300px;
-    max-width: 300px;
-   }
 
 }
-@media (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-  .about .about-content .lf img{
-    max-height: 300px;
-    max-width: 300px;
-   }
-}
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
 
-/*@media screen and (max-width: 5400px) {
-    .about .about-content .lf img{
-    max-height: 540px;
-    max-width: 540px;
-   
-    
-  }*/
-
-
-  
 @media (max-width: 500px) {
-    .home{
-        padding-left: 0;
-    }
     .home .home-content .text-2{
         font-size: 50px;
     }
     .home .home-content .text-3{
         font-size: 27px;
     }
-    .about .about-content .lf img{
-    max-height: 400px;
-    max-width: 400px;
-   }
     .about .about-content .right .text,
     .skills .skills-content .left .text{
         font-size: 19px;
@@ -664,23 +605,7 @@ footer span a:hover{
         line-height: 38px;
     }
 }
-@media (max-width: 375px) {
-    about .about-content .lf img{
-    max-height: 340px;
-    max-width: 340px;
-   }
 
-}
-@media (max-width: 290px) {
-    .home{
-        padding-left: 0;
-    }
-    .about .about-content .lf img{
-    max-height: 260px;
-    max-width: 260px;
-   }
-
-}
 /* Set height of body and the document to 100% to enable "full page tabs" */
 /* Style tab links */
 .tablink {
@@ -760,10 +685,20 @@ footer span a:hover{
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 
 
 .myTeams {
@@ -807,7 +742,18 @@ footer span a:hover{
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
-
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
 
   .card2 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
