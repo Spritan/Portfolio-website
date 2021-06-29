@@ -161,6 +161,7 @@ section .title{
 
 /* home sec styling */
 .home{
+    padding-left: 8em;
     display: flex;
     background: url("imgs/kk.jpg") no-repeat center;
     height: 100vh;
@@ -485,6 +486,7 @@ footer span a:hover{
     }
 }
 @media (max-width: 947px){
+    
     .home_img {
         grid-area: img;
         min-width: 250px;
@@ -556,6 +558,9 @@ footer span a:hover{
 }
 
 @media (max-width: 690px) {
+    .home{
+        padding-left: 0;
+    }
     .max-width{
         padding: 0 23px;
     }
@@ -575,6 +580,9 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
+    .home{
+        padding-left: 0;
+    }
     .home .home-content .text-2{
         font-size: 50px;
     }
