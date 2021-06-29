@@ -219,12 +219,14 @@ section .title{
 
 .about .about-content .lf{
     width: 40%;
+    text-align: center;
 }
 .about .about-content .lf img{
     max-height: 300px;
     max-width: 300px;
     object-fit: cover;
     border-radius: 6px;
+    ;
 }
 .about .about-content .rt{
     width: 60%;
@@ -638,8 +640,8 @@ footer span a:hover{
         font-size: 27px;
     }
     .about .about-content .lf img{
-    max-height: 400px;
-    max-width: 400px;
+    max-height: 300px;
+    max-width: 300px;
    }
     .about .about-content .right .text,
     .skills .skills-content .left .text{
@@ -666,9 +668,10 @@ footer span a:hover{
 }
 @media (max-width: 375px) {
     about .about-content .lf img{
-    max-height: 340px;
-    max-width: 340px;
+    max-height: 330px;
+    max-width: 330px;
    }
+
 
 }
 @media (max-width: 290px) {

@@ -480,6 +480,12 @@ footer span a:hover{
         max-width: 350px;
     }
 }
+@media (max-width: 1080px) {
+    .about .about-content .left img{
+        max-height: 350px;
+        max-width: 350px;
+    }
+}
 @media (max-width: 1024px) {
     .about .about-content .left img{
         max-height: 300px;
@@ -637,8 +643,8 @@ footer span a:hover{
         font-size: 27px;
     }
     .about .about-content .lf img{
-    max-height: 400px;
-    max-width: 400px;
+    max-height: 350px;
+    max-width: 350px;
    }
     .about .about-content .right .text,
     .skills .skills-content .left .text{
@@ -683,6 +689,14 @@ footer span a:hover{
    }
 
 }
+@media screen and (max-width: 360px) {
+    .about .about-content .lf img{
+    max-height: 340px;
+    max-width: 340px;
+   
+    
+  }
+
 @media (max-width: 320px) {
     .home{
         padding-left: 0;
