@@ -663,6 +663,8 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+    .skills p{
+        font-size:8px}
 }
 @media (max-width: 375px) {
     about .about-content .lf img{
