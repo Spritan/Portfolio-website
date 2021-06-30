@@ -618,215 +618,127 @@ footer span a:hover{
    
     
   }
-
-  
-@media (max-width: 500px) {
-    .home{
-        padding-left: 0;
-    }
-    .home .home-content .text-2{
-        font-size: 50px;
-    }
-    .home .home-content .text-3{
-        font-size: 27px;
-    }
-    .about .about-content .lf img{
-    max-height: 400px;
-    max-width: 400px;
-   }
-    .about .about-content .right .text,
-    .skills .skills-content .left .text{
-        font-size: 19px;
-    }
-    .contact .right form .fields{
-        flex-direction: column;
-    }
-    .contact .right form .name,
-    .contact .right form .email{
-        margin: 0;
-    }
-    .right form .error-box{
-       width: 150px;
-    }
-    .scroll-up-btn{
-        right: 15px;
-        bottom: 15px;
-        height: 38px;
-        width: 35px;
-        font-size: 23px;
-        line-height: 38px;
-    }
-}
-@media (max-width: 290px) {
-    .home{
-        padding-left: 0;
-    }
-    .about .about-content .lf img{
-    max-height: 260px;
-    max-width: 260px;
-   }
-
-}
-/* Set height of body and the document to 100% to enable "full page tabs" */
-/* Style tab links */
-.tablink {
-  background-color: #3CA67F;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 20%;
-}
-
-.tablink:hover {
-  background-color: #49CC9C;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 100px 20px;
-  height: 100%;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-#Web-Dev {background-color:#303030;}
-#Ui-Design {background-color: #303030;}
-#Development {background-color: #303030;}
-#Robotics {background-color: #303030;}
-#Graphic-Design {background-color: #303030;}
-
-.card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  min-height: width;
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-/* Add some padding inside the card container */
-.container {
-  padding: 2px 16px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.header {
-  text-align: center;
-  padding: 32px;
-}
-
-.row {
+tabs {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
 }
-
-/* Create four equal columns that sits next to each other */
-.columns {
-  flex: 20%;
-  max-width: 20%;
-  padding: 0 4px;
+ 
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background:  #3CC0F8;
+  font-weight: bold;
+  transition: background ease 0.2s;
 }
-
-.columns img {
-  margin-top: 8px;
-  vertical-align: middle;
+ 
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
 }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-
-
-.myTeams {
-    max-width: 1140px;
-    margin: auto;
-    color: #212121;
+ 
+.tabs input[type="radio"] {
+  display: none;
+}
+ 
+.tabs input[type="radio"]:checked + label {
+  background: #fff;
+}
+ 
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+ 
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
   }
-  
-  h1 {
-    font-size: 50px;
-    word-break: break-all;
-  }
-  
-  .row {
-    margin: 8px -16px;
-  }
-  
-  /* Add padding BETWEEN each column (if you want) */
-  .row,
-  .row > .column {
-    padding: 8px;
-  }
-  
-  /* Create four equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 25%;
-  }
-  
-  /* Clear floats after rows */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Content */
-  .content {
-    background-color: white;
-    padding: 10px;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-
-
-  .card2 {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-
-  }
-  
-  .title {
-    color: white;
-    font-size: 18px;
-  }
-  
-  button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
+ 
+  .tabs label {
     width: 100%;
-    font-size: 18px;
+    margin-right: 0;
+    margin-top: 0.2rem;
   }
-  
-  a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
+}
+ 
+body {
+  background: #333;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 10vh;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-size: 112%;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background:  #3CC0F8;
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+ 
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+}
+ 
+.tabs input[type="radio"] {
+  display: none;
+}
+ 
+.tabs input[type="radio"]:checked + label {
+  background: #fff;
+}
+ 
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+ 
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
   }
-  
-  button:hover, a:hover {
-    opacity: 0.7;
+ 
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
   }
+}
+ 
+body {
+  background: #333;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 10vh;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-size: 112%;
+}
