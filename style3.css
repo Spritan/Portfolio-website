@@ -808,7 +808,9 @@ footer span a:hover{
     background-color: white;
     padding: 10px;
   }
-  
+.social-list__link{
+    color: black;
+}
   /* Responsive layout - makes a two column-layout instead of four columns */
 
   .card2 {
@@ -840,7 +842,7 @@ footer span a:hover{
   a {
     text-decoration: none;
     font-size: 22px;
-    color: black;
+
   }
   
   button:hover, a:hover {
